@@ -260,6 +260,15 @@ body {
     }
 }
 
+@media screen and (max-width:412px) {
+    .cs-list {
+        font-size {
+            margin-left:-1em;
+            font-size:0.9em;   
+        }
+    }
+}
+
 @media screen and (max-width:376px) {
     .hic-image {
         width:350px;
