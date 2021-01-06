@@ -50,6 +50,7 @@ body {
 .cg-item {
     width:20em;
     transition:0.15s;
+    text-decoration:none;
 }
 
 .cgi-image:hover {
