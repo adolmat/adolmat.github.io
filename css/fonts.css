@@ -1,0 +1,18 @@
+@font-face {
+    font-family:'CEST Black';
+    src:url('../fonts/ALSHauss-Black.ttf');
+}
+
+@font-face {
+    font-family:'CEST Bold';
+    src:url('../fonts/ALSHauss-Bold.ttf');
+}
+
+@font-face {
+    font-family:'CEST Regular';
+    src:url('../fonts/ALSHauss-Regular.ttf');
+}
+
+* {
+    font-family:'CEST Regular';
+}
