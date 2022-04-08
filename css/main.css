@@ -1,0 +1,274 @@
+body {
+    background:#f5f5f5;
+}
+
+header, footer {
+    background: #f0f0f0;
+    padding:1em;
+}
+
+header {
+    display:flex;
+    flex-direction:column;
+}
+
+.logotype {
+    font-family:'CEST Bold';
+    font-variant-caps: petite-caps;
+    font-size:1.4em;
+    padding:0.3em 0.6em;
+    margin:1em 0;
+    color:#fff;
+    background:#b01c28;
+    transition:0.3s;
+}
+
+.logotype:hover {
+    cursor:default;
+}
+
+.logo-container {
+    width:1400px;
+    margin:0 auto;
+    display:flex;
+    flex-direction:row;
+}
+
+.header-navigation nav {
+    max-width:1400px;
+    text-align: center;
+    margin:0 auto;
+    display:flex;
+    flex-direction: row;
+    overflow-x:auto;
+}
+
+.header-nav-link {
+    margin:0 0.2em 0 0;
+    padding:0.5em 1.2em;
+    background:transparent;
+    transition:0.1s;
+    border-radius:0.3em;
+    color:#333;
+    text-decoration:none;
+}
+
+.header-nav-link:hover {
+    background:#e5e5e5;
+    color: #005ebb;
+    cursor:pointer;
+}
+
+.copyright-link {
+    padding:0.1em 0.3em;
+    color:#333;
+    text-decoration:none;
+    border-radius:0.2em;
+    transition:0.1s;
+}
+
+.copyright-link:hover {
+    background:#e5e5e5;
+    cursor:pointer;
+    color: #005ebb;
+}
+
+.footer-copyright {
+    text-align:center;
+}
+
+.footer-inline {
+    max-width:1400px;
+    margin:0 auto;
+    display:flex;
+    flex-direction:row;
+}
+
+.selected-link {
+    padding:0.8em 1.5em;
+    color:#333;
+    background:#e5e5e5;
+    text-decoration: none;
+    border-radius:0.3em;
+    transition:0.1s;
+    margin:2em 0;
+    max-width:140px;
+}
+
+.selected-link:hover {
+    cursor:default;
+    background:#b01c28;
+    color:#fff;
+}
+
+.content-item {
+    max-width:1400px;
+    margin:2em auto;
+    padding:1em;
+    display:flex;
+    flex-direction:column;
+}
+
+.content-header {
+    font-size:1.5em;
+    font-family:'CEST Black';
+    font-weight: normal;
+}
+
+.gallery-short-container {
+
+}
+
+.gallery-image {
+    display:inline-block;
+    margin:0 auto;
+    width:264px;
+    height:150px;
+    object-fit: cover;
+    border-radius:0.3em;
+    transition:0.15s;
+}
+
+.gallery-image:hover {
+    opacity:0.9;
+}
+
+.catalog-slider {
+    font-family: Verdana, sans-serif;
+    margin:0;
+
+}
+
+.mySlides {
+    display: none;
+}
+
+img {vertical-align: middle;}
+
+.slideshow-container {
+    max-width: 800px;
+    height:450px;
+    position: relative;
+    margin: 0;
+    border-radius:2em;
+    box-shadow:0 0 0.5em rgb(194, 194, 194);
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {
+        font-size: 11px;
+    }
+}
+
+.slider-link {
+    color:#2a55c5;
+    font-family:'CenturyGothic';
+    transition:0.4s;
+    padding:0.5em 1em;
+}
+
+.slider-link:hover {
+    color:white;
+    text-decoration:none;
+    cursor:pointer;
+    background:#2a55c5;
+}
+
+.reviews-container {
+    display:flex;
+    flex-direction:row;
+    overflow-x:auto;
+}
+
+.contacts-link {
+    text-decoration:none;
+    margin:1em;
+}
+
+.contacts-link-label {
+    display:flex;
+}
+
+.contacts-image {
+    width:45px;
+}
+
+.contacts-link-label span {
+    line-height:45px;
+    color:#333;
+    margin-left:1.5em;
+}

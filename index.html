@@ -18,15 +18,154 @@
         <div id="root">
             <article class="container">
                 <header>
+                    <div class="logo-container">
+                        <div class="logotype">
+                            Александр Долмат
+                        </div>
+                    </div>
 
+                    <div class="header-navigation">
+                        <nav>
+                            <a class="header-nav-link" href="/">Главная</a>
+                            <a class="header-nav-link" href="#competencies">Компетенции</a>
+                            <a class="header-nav-link" href="#gallery">Фотогалерея</a>
+                            <a class="header-nav-link" href="#contacts">Контакты</a>
+                        </nav>
+                    </div>
                 </header>
 
                 <main>
+                    <section id="competencies" class="content-item">
+                        <h1 class="content-header">
+                            Чем я занимаюсь?
+                        </h1>
+                        <p class="content-text">
+                            Я предоставляю услуги светового и звукового оформления Ваших мероприятий.
+                        </p>
 
+                        <p>
+                            Также есть особая услуга - <a href="/cloud" class="copyright-link">тяжёлый дым</a>.
+                        </p>
+                    </section>
+
+                    <section id="gallery" class="content-item">
+                        <h1 class="content-header">
+                            Наша фотогалерея
+                        </h1>
+                        <p class="content-text">
+                            В этом разделе вы можете просмотреть, как может выглядеть праздник.
+                        </p>
+
+                        <div class="catalog-slider">
+                            <div class="slideshow-container">
+
+                                <div class="mySlides fade">
+                                    <div class="numbertext">1 / 10</div>
+                                    <img src="media/10.jpg" style="width:100%;border-radius:1em;height:450px;object-fit:cover;">
+                                </div>
+
+                                <div class="mySlides fade">
+                                    <div class="numbertext">2 / 10</div>
+                                    <img src="media/9.jpg" style="width:100%;border-radius:1em;height:450px;object-fit:cover;">
+                                </div>
+
+                                <div class="mySlides fade">
+                                    <div class="numbertext">3 / 10</div>
+                                    <img src="media/8.jpg" style="width:100%;border-radius:1em;height:450px;object-fit:cover;">
+                                </div>
+
+                                <div class="mySlides fade">
+                                    <div class="numbertext">4 / 10</div>
+                                    <img src="media/7.jpg" style="width:100%;border-radius:1em;height:450px;object-fit:cover;">
+                                </div>
+
+                                <div class="mySlides fade">
+                                    <div class="numbertext">5 / 10</div>
+                                    <img src="media/6.jpg" style="width:100%;border-radius:1em;height:450px;object-fit:cover;">
+                                </div>
+
+                                <div class="mySlides fade">
+                                    <div class="numbertext">6 / 10</div>
+                                    <img src="media/5.jpg" style="width:100%;border-radius:1em;height:450px;object-fit:cover;">
+                                </div>
+
+                                <div class="mySlides fade">
+                                    <div class="numbertext">7 / 10</div>
+                                    <img src="media/4.jpg" style="width:100%;border-radius:1em;height:450px;object-fit:cover;">
+                                </div>
+
+                                <div class="mySlides fade">
+                                    <div class="numbertext">8 / 10</div>
+                                    <img src="media/3.jpg" style="width:100%;border-radius:1em;height:450px;object-fit:cover;">
+                                </div>
+
+                                <div class="mySlides fade">
+                                    <div class="numbertext">9 / 10</div>
+                                    <img src="media/2.jpg" style="width:100%;border-radius:1em;height:450px;object-fit:cover;">
+                                </div>
+
+                                <div class="mySlides fade">
+                                    <div class="numbertext">10 / 10</div>
+                                    <img src="media/1.jpg" style="width:100%;border-radius:1em;height:450px;object-fit:cover;">
+                                </div>
+
+                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                            </div>
+
+                            <script>
+                                var slideIndex = 1;
+                                showSlides(slideIndex);
+
+                                function plusSlides(n) {
+                                    showSlides(slideIndex += n);
+                                }
+
+                                function currentSlide(n) {
+                                    showSlides(slideIndex = n);
+                                }
+
+                                function showSlides(n) {
+                                    var i;
+                                    var slides = document.getElementsByClassName("mySlides");
+                                    var dots = document.getElementsByClassName("dot");
+                                    if (n > slides.length) {slideIndex = 1}
+                                    if (n < 1) {slideIndex = slides.length}
+                                    for (i = 0; i < slides.length; i++) {
+                                        slides[i].style.display = "none";
+                                    }
+                                    for (i = 0; i < dots.length; i++) {
+                                        dots[i].className = dots[i].className.replace(" active", "");
+                                    }
+                                    slides[slideIndex-1].style.display = "block";
+                                    dots[slideIndex-1].className += " active";
+                                }
+                            </script>
+                        </div>
+                    </section>
+
+                    <section id="contacts" class="content-item">
+                        <a href="https://vk.com/uplighting_nesvizh" class="contacts-link">
+                            <div class="contacts-link-label">
+                                <img src="media/vk-c.png" class="contacts-image">
+                                <span>Группа ВКонтакте</span>
+                            </div>
+                        </a>
+
+                        <a href="https://instagram.com/uplighting_nesvizh" class="contacts-link">
+                            <div class="contacts-link-label">
+                                <img src="media/ig-c.png" class="contacts-image">
+                                <span>Страница Instagram</span>
+                            </div>
+                        </a>
+                    </section>
                 </main>
 
                 <footer>
-
+                    <div class="footer-copyright">
+                        © <script type="text/javascript">var mdate = new Date(); document.write(mdate.getFullYear());</script> Powered by <a target="_blank" href="https://dbbgroup.github.io/" class="copyright-link">DBB Group</a>
+                    </div>
                 </footer>
             </article>
         </div>
